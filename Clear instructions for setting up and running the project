@@ -1,0 +1,59 @@
+# Color Detection from Images
+
+This application allows users to upload an image, click on any point, and instantly get the color name and RGB values of that pixel.
+
+## Prerequisites
+
+Before running the application, ensure you have the following installed:
+
+* **Python 3.x:** (Recommended 3.8 or higher) You can download it from [https://www.python.org/downloads/](https://www.python.org/downloads/)
+* **pip:** Python's package installer (usually comes with Python)
+
+## Installation
+
+1.  **Clone the repository:**
+
+    ```bash
+    git clone <your-repository-url>
+    cd <your-repository-directory>
+    ```
+
+2.  **Create a virtual environment (recommended):**
+
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate  # On Windows
+    source venv/bin/activate  # On macOS and Linux
+    ```
+
+3.  **Install the required packages:**
+
+    ```bash
+    pip install streamlit opencv-python pandas
+    ```
+
+## Dataset
+
+* Ensure you have the `colors.csv` file in the same directory as your main script. This file should contain the color names and their corresponding RGB values.
+
+## Running the Application
+
+1.  **Run the Streamlit app:**
+
+    ```bash
+    streamlit run your_app_name.py
+    ```
+
+    (Replace `your_app_name.py` with the actual name of your main Python script)
+
+2.  **Open the application in your browser:**
+
+    Streamlit will automatically open a new tab in your default web browser. If it doesn't, it will provide you with a local URL to access the app.
+
+## Usage
+
+1.  **Upload Image:** Use the file uploader to upload the image you want to analyze.
+2.  **Click on the Image:** Click on any point in the displayed image.
+3.  **View Color Information:** The application will display the closest matching color name, the RGB values of the selected pixel, and a color swatch.
+
+## Project Structure
